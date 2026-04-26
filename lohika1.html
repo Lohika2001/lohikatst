@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My DevOps App</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .box {
+            margin-top: 50px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>🚀 Welcome to My DevOps Project</h1>
+        <p>This app is deployed using Jenkins + Tomcat</p>
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("msg").innerText = "Deployment Successful 🎉";
+        }
+    </script>
+
+</body>
+</html>
